@@ -1575,16 +1575,22 @@ body {
   padding-top: 23px;
 }
 
-.contacts-footer__content-title {
-  margin-bottom: 27px;
-}
-
 .contacts-footer__content-column {
+  display: inline-flex;
+  flex-direction: column;
+  padding-right: 10px;
   color: #313131;
   font-family: "Roboto", sans-serif;
   font-size: 0.938rem;
   font-weight: 400;
   line-height: 150%;
+}
+
+.contacts-footer__content-title {
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: 700;
+  line-height: 147%;
+  margin-bottom: 27px;
 }
 
 .contacts-footer__content-column:not(:last-child) {
@@ -1600,11 +1606,11 @@ body {
 }
 
 .contacts-footer__content-email {
+  align-self: self-start;
   color: var(--orangeColor);
 }
 
 .contacts-footer__content-phone {
-  display: block;
   color: #313131;
 }
 .contacts-footer__content-social {
